@@ -8,11 +8,8 @@ loql.js : A simple interface to localStorage
 // js Example:
 
 var person0 = {
-
         'name':'Marco',
-        
         'nick':'mrk25'
-        
 }
 
 loql.insert('persons', person0);
