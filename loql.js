@@ -26,7 +26,7 @@ loql = {
 		localStorage.setItem(table, JSON.stringify(targetIndex));
 		localStorage.setItem(table+'-'+newID, JSON.stringify(value));
 		
-		return newID;
+		return newID.toString();
 	},
 	
 	set: function(table, id, value){
