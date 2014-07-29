@@ -12,9 +12,9 @@ var person0 = {
         'nick':'mrk25'
 }
 
-loql.insert('persons', person0);
+var personID = loql.insert('persons', person0);
 
-var person = loql.select('persons', '0');
+var person = loql.select('persons', personID);
 
 console.log(person.name);
 
