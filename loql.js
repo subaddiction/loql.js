@@ -60,6 +60,16 @@ loql = {
 		
 		localStorage.setItem(table, JSON.stringify(newIndex));
 		localStorage.removeItem(table+'-'+id);
-	}
+	},
+	
+	drop: function(table){
+		var records = this.select(table);
+		if(records){
+			for(i=0;i<records.length;i++){
+				loql.del(table, records[i]);
+			}
+		}
+		localStorage.removeItem(table);
+	},
 
 }
