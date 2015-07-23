@@ -66,7 +66,7 @@ loql = {
 		var records = this.select(table);
 		if(records){
 			for(i=0;i<records.length;i++){
-				loql.del(table, records[i]);
+				localStorage.removeItem(table+'-'+records[i]);
 			}
 		}
 		localStorage.removeItem(table);
